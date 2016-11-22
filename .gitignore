@@ -24,10 +24,13 @@ OUTPUT_FILES/*
 DATABASES_MPI/*
 EXAMPLES/
 tests/
-DATA/PPM/*globe.txt
+DATA/PPM/MITS_ppm*.txt
+DATA/crustmap/eucrust_default/
 
 # Documentation
 doc/USER_MANUAL/figures/*-eps-converted-to.pdf
 
 # Other
 slice*.txt
+VTK_OUTPUT/
+
