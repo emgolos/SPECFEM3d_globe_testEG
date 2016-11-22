@@ -1,0 +1,10 @@
+
+Tue Nov 22 11:32:39 EST 2016
+starting MPI mesher on 216 processors
+
+  mesher done: Tue Nov 22 11:34:49 EST 2016
+
+
+Tue Nov 22 11:34:51 EST 2016
+starting run in current directory /nobackup1/emgolos/specfem3d_globe
+

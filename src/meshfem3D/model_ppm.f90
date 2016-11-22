@@ -43,7 +43,7 @@
   ! ----------------------
 
   ! scale perturbations in shear speed to perturbations in density and vp
-  logical,parameter:: SCALE_MODEL = .false.
+  logical,parameter:: SCALE_MODEL = .true.
 
   ! factor to convert perturbations in shear speed to perturbations in density
   ! taken from s20rts (see also Qin, 2009, sec. 5.2)
@@ -598,7 +598,7 @@
 
 !----------------------------------------------------------------------------------------------------
   ! smoothing parameters
-  logical,parameter:: GAUSS_SMOOTHING = .false. ! set to true to use this smoothing routine
+  logical,parameter:: GAUSS_SMOOTHING = .true. ! set to true to use this smoothing routine
 
   sigma_h = 100.0  ! km, horizontal
   sigma_v = 100.0   ! km, vertical

@@ -115,15 +115,30 @@
     ! number of element layers in each mesh region
     NER_CRUST                = 1
     NER_80_MOHO              = 1
-    NER_220_80               = 2
-    NER_400_220              = 2
-    NER_600_400              = 2
-    NER_670_600              = 1
-    NER_771_670              = 1
+    NER_220_80               = 6
+    NER_400_220              = 6
+    NER_600_400              = 4
+    NER_670_600              = 2
+    NER_771_670              = 2
     NER_TOPDDOUBLEPRIME_771  = 15
     NER_CMB_TOPDDOUBLEPRIME  = 1
     NER_OUTER_CORE           = 16
     NER_TOP_CENTRAL_CUBE_ICB = 2
+
+    ! number of element layers in each mesh region -- original
+!    NER_CRUST                = 1
+!    NER_80_MOHO              = 1
+!    NER_220_80               = 2
+!    NER_400_220              = 2
+!    NER_600_400              = 2
+!    NER_670_600              = 1
+!    NER_771_670              = 1
+!    NER_TOPDDOUBLEPRIME_771  = 15
+!    NER_CMB_TOPDDOUBLEPRIME  = 1
+!    NER_OUTER_CORE           = 16
+!    NER_TOP_CENTRAL_CUBE_ICB = 2
+
+
 
     ! radius of central cube
     R_CENTRAL_CUBE = 950000.d0

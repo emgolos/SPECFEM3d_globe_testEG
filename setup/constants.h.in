@@ -216,9 +216,9 @@
 !-- uncomment for using Crust1.0
 ! integer, parameter :: ITYPE_CRUSTAL_MODEL = ICRUST_CRUST1
 !-- uncomment for using Crust2.0
-  integer, parameter :: ITYPE_CRUSTAL_MODEL = ICRUST_CRUST2
+!  integer, parameter :: ITYPE_CRUSTAL_MODEL = ICRUST_CRUST2
 !-- uncomment for using General Crustmaps instead
-! integer, parameter :: ITYPE_CRUSTAL_MODEL = ICRUST_CRUSTMAPS
+  integer, parameter :: ITYPE_CRUSTAL_MODEL = ICRUST_CRUSTMAPS
 !-- uncomment for using EPcrust instead (European regional model)
 ! integer, parameter :: ITYPE_CRUSTAL_MODEL = ICRUST_EPCRUST
 !-- uncomment for using SHcrust

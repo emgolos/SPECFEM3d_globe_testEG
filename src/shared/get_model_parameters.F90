@@ -413,7 +413,8 @@
     ISOTROPIC_3D_MANTLE = .true.
     ONE_CRUST = .true.
     THREE_D_MODEL = THREE_D_MODEL_PPM
-    TRANSVERSE_ISOTROPY = .true. ! to use transverse-isotropic prem
+    REFERENCE_1D_MODEL = REFERENCE_MODEL_AK135F_NO_MUD
+    TRANSVERSE_ISOTROPY = .false. ! to use transverse-isotropic prem
 
   else if (MODEL_ROOT == 'GLL' .or. MODEL_ROOT == 'gll') then
     ! model will be given on local basis, at all GLL points,

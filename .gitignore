@@ -21,7 +21,13 @@ setup/version.fh
 bin/
 obj/
 OUTPUT_FILES/*
+DATABASES_MPI/*
+EXAMPLES/
+tests/
+DATA/PPM/*globe.txt
 
 # Documentation
 doc/USER_MANUAL/figures/*-eps-converted-to.pdf
 
+# Other
+slice*.txt
