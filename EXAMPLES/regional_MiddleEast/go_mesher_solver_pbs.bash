@@ -49,7 +49,14 @@ echo `date`
 echo "starting MPI mesher on $numnodes processors"
 echo
 
-mpiexec -np $numnodes $PWD/bin/xmeshfem3D
+source /etc/profile.d/modules.sh
+module del gcc/4.8.4
+module add engaging/openmpi/1.8.8
+
+mpirun --mca btl ^scif ./bin/xmeshfem3D
+
+#mpiexec -np $numnodes $PWD/bin/xmeshfem3D
+
 
 echo "  mesher done: `date`"
 echo

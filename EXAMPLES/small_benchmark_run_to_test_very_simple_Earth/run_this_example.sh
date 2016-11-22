@@ -35,6 +35,11 @@ cd ../
 # using default configuration
 cp DATA/Par_file ../../DATA
 cd ../../
+
+source /etc/profile.d/modules.sh
+module del gcc/4.8.4
+module add engaging/openmpi/1.8.8
+
 make clean
 make all
 

@@ -34,6 +34,10 @@ rm -rf OUTPUT_FILES/*
 cd ../../
 
 # compiles for a forward simulation
+source /etc/profile.d/modules.sh
+module del gcc/4.8.4
+module add engaging/openmpi/1.8.8
+
 cp $currentdir/DATA/Par_file DATA/Par_file
 make clean
 make all
@@ -62,7 +66,9 @@ cd ../
 echo
 echo "  submitting script..."
 echo
-first=`qsub go_mesher_solver_pbs.bash`
+#first=`qsub go_mesher_solver_pbs.bash`
+#first=`sbatch go_mesher_solver_pbs.bash`
+sbatch go_mesher_solver_slurm.bash
 echo "  submitted job: $first"
 
 echo

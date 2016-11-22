@@ -41,6 +41,10 @@ echo `date`
 echo "starting MPI mesher on $numnodes processors"
 echo
 
+source /etc/profile.d/modules.sh
+module del gcc/4.8.4
+module add engaging/openmpi/1.8.8
+
 mpirun -np $numnodes $PWD/bin/xmeshfem3D
 
 echo "  mesher done: `date`"
@@ -60,6 +64,10 @@ echo
 echo `date`
 echo starting run in current directory $PWD
 echo
+
+source /etc/profile.d/modules.sh
+module del gcc/4.8.4
+module add engaging/openmpi/1.8.8
 
 mpirun -np $numnodes $PWD/bin/xspecfem3D
 
